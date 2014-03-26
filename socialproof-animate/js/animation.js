@@ -1,7 +1,7 @@
 var wobble = function() {
   $("#tweet").removeClass('slideOutLeft');
   $('#tweet').addClass('animated wobble');
-  // console.log("I'm called");
+  $('.feed').removeClass('hide');
 }
 
 var move = function() {
@@ -19,6 +19,7 @@ var initTwit= function() {
 var instaWobble = function() {
   $("#insta").removeClass('slideOutLeft');
   $('#insta').addClass('animated wobble');
+  $('.feed2').removeClass('hide');
 }
 var instaMove = function() {
   $("#insta").addClass('animated slideOutLeft');
