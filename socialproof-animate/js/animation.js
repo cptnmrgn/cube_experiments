@@ -2,6 +2,7 @@ var wobble = function() {
   $("#tweet").removeClass('slideOutLeft');
   $('#tweet').addClass('animated wobble');
   $('.feed').removeClass('hide');
+  $('.feed').animate({height:'85%'}, 300);
 }
 
 var move = function() {
@@ -20,6 +21,7 @@ var instaWobble = function() {
   $("#insta").removeClass('slideOutLeft');
   $('#insta').addClass('animated wobble');
   $('.feed2').removeClass('hide');
+  $('.feed2').animate({height:'85%'}, 300);
 }
 var instaMove = function() {
   $("#insta").addClass('animated slideOutLeft');
