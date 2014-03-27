@@ -17,7 +17,7 @@ html, body {
   background: radial-gradient(ellipse at center, #b0e4ff 0%, #00a8ff 80%);
 }
 
-#tweet {
+#bird {
   margin: 0 auto;
   background: url('../images/twitter-white-lg.svg');
   width: 20%;
@@ -39,11 +39,12 @@ html, body {
 
 }
 
+/*spinning of the bird*/
 .tweet {
-  -webkit-animation: spin 1s linear ; 
-  -moz-animation:    spin 1s linear ; 
-  -o-animation:      spin 1s linear ; 
-  animation:         spin 1s linear ; 
+  -webkit-animation: spin 1.5s linear ; 
+  -moz-animation:    spin 1.5s linear ; 
+  -o-animation:      spin 1.5s linear ; 
+  animation:         spin 1.5s linear ; 
 }
 
 
@@ -64,7 +65,25 @@ html, body {
   100% { -webkit-transform: rotate(0deg); }
 }
 
+#note1 {
+  height: 10%;
+  width: 2%;
+  position: relative;
+  display: block;
+  bottom: 70%;
+  left: 54%;
+  z-index: 3;
+}
 
+#note2 {
+  height: 10%;
+  width: 2%;
+  position: relative;
+  display: block;
+  bottom: 68%;
+  left: 52%;
+  z-index: 2;
+}
 
 
 #instagram {
@@ -111,11 +130,11 @@ html, body {
 .feed {
    z-index: 100;
    position: relative;
-   bottom: 93%;
-   left: 23%;
+   bottom: 50%; /*to 93%*/
+   left: 50%; /*to 23%*/
    /*display: block;*/
-   width: 74%;
-   height: 0%;
+   width: 1%;
+   height: 1%;
    margin: 0px;
    padding: 0;
    border: 1px solid rgba(0,0,0,0.5);
@@ -130,11 +149,11 @@ html, body {
 .feed2 {
    z-index: 100;
    position: relative;
-   bottom: 92%;
-   left: 23%;
+   bottom: 50%; /*to 92%*/
+   left: 50%; /*to 23%*/
    /*display: block;*/
-   width: 74%;
-   height: 0%;
+   width: 1%;
+   height: 1%;
    margin: 0px;
    padding: 0;
    border: 1px solid rgba(0,0,0,0.5);
@@ -228,57 +247,57 @@ html, body {
   }
 
   75% {
-    -webkit-transform: translateX(-195%);
-    transform: translateX(-195%);
+    -webkit-transform: translateX(-190%);
+    transform: translateX(-190%);
   }
 
   100% {
-    -webkit-transform: translateX(-200%);
-    transform: translateX(-200%);
+    -webkit-transform: translateX(-195%);
+    transform: translateX(-195%);
   }
 }
 
 @keyframes wobble {
   0% {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
+    -webkit-transform: translateX(-195%);
+    -ms-transform: translateX(-195%);
+    transform: translateX(-195%);
   }
 
   15% {
-    -webkit-transform: translateX(-25%) rotate(-5deg);
-    -ms-transform: translateX(-25%) rotate(-5deg);
-    transform: translateX(-25%) rotate(-5deg);
+    -webkit-transform: translateX(-185%) rotate(-5deg);
+    -ms-transform: translateX(-185%) rotate(-5deg);
+    transform: translateX(-185%) rotate(-5deg);
   }
 
   30% {
-    -webkit-transform: translateX(20%) rotate(3deg);
-    -ms-transform: translateX(20%) rotate(3deg);
-    transform: translateX(20%) rotate(3deg);
+    -webkit-transform: translateX(-200%) rotate(3deg);
+    -ms-transform: translateX(-200%) rotate(3deg);
+    transform: translateX(-200%) rotate(3deg);
   }
 
   45% {
-    -webkit-transform: translateX(-15%) rotate(-3deg);
-    -ms-transform: translateX(-15%) rotate(-3deg);
-    transform: translateX(-15%) rotate(-3deg);
+    -webkit-transform: translateX(-195%) rotate(-3deg);
+    -ms-transform: translateX(-195%) rotate(-3deg);
+    transform: translateX(-195%) rotate(-3deg);
   }
 
   60% {
-    -webkit-transform: translateX(10%) rotate(2deg);
-    -ms-transform: translateX(10%) rotate(2deg);
-    transform: translateX(10%) rotate(2deg);
+    -webkit-transform: translateX(-200%) rotate(2deg);
+    -ms-transform: translateX(-200%) rotate(2deg);
+    transform: translateX(-200%) rotate(2deg);
   }
 
   75% {
-    -webkit-transform: translateX(-5%) rotate(-1deg);
-    -ms-transform: translateX(-5%) rotate(-1deg);
-    transform: translateX(-5%) rotate(-1deg);
+    -webkit-transform: translateX(-190%) rotate(-1deg);
+    -ms-transform: translateX(-190%) rotate(-1deg);
+    transform: translateX(-190%) rotate(-1deg);
   }
 
   100% {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
+    -webkit-transform: translateX(-195%);
+    -ms-transform: translateX(-195%);
+    transform: translateX(-195%);
   }
 }
 
